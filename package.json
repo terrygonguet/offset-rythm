@@ -1,0 +1,75 @@
+{
+  "name": "offset-rythm",
+  "version": "0.1.0",
+  "description": "A WebExtension to keep track of \"local time\" when I wake up at weird hours.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "pack": "web-ext -s=./dist build -i=./background/"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": "> 1%, last 2 versions, Firefox ESR, not dead"
+          }
+        }
+      ]
+    ],
+    "ignore": [
+      "node_modules"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "keystone"
+    ],
+    "env": {
+      "browser": true,
+      "webextensions": true
+    },
+    "parser": "babel-eslint"
+  },
+  "eslintIgnore": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrygonguet/offset-rythm.git"
+  },
+  "author": "Terry Gonguet",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/terrygonguet/offset-rythm/issues"
+  },
+  "homepage": "https://github.com/terrygonguet/offset-rythm#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-keystone": "^3.0.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "hoek": "^4.2.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "lodash": "^4.17.10",
+    "vue": "^2.5.16",
+    "webextension-polyfill": "^0.2.1"
+  }
+}
