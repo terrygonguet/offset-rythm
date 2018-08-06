@@ -1,5 +1,10 @@
 <body>
   <div id="container" style="visibility: hidden;">
+    <p>Today I got up at <input type="time" v-model="gotUp"/>.<br/>
+		Assuming a day starts at <input type="number" min=0 max=12 v-model.number="startDay"/> AM</p>
+		<button @click="save">Save</button>
+    <h2>{{currentTime()}}</h2>
+		<p>To get a full night's sleep, I need to go to bed at around {{bedTime}}</p>
   </div>
   <script src="../lib/browser-polyfill.min.js"></script>
   <script src="popup.js"></script>

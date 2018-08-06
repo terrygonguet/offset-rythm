@@ -30,6 +30,12 @@
       "browser": true,
       "webextensions": true
     },
+    "rules": {
+      "quotes": [
+        "error",
+        "double"
+      ]
+    },
     "parser": "babel-eslint"
   },
   "eslintIgnore": [
@@ -49,6 +55,7 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
@@ -69,6 +76,7 @@
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "lodash": "^4.17.10",
+    "moment": "^2.22.2",
     "vue": "^2.5.16",
     "webextension-polyfill": "^0.2.1"
   }

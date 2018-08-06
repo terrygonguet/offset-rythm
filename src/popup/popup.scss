@@ -1,32 +1,37 @@
-#container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+	#container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 
-  %input-style {
-    background: transparent;
-    border: none;
-    color: #EEE;
-  }
+	%input-style {
+		background: transparent;
+		border: none;
+		// color: #EEE;
+	}
 
-  input[type=number],
-  input[type=text] {
-    @extend %input-style;
-  }
+	input[type=number],
+	input[type=text] {
+		@extend %input-style;
+	}
 
-  input[type=number] {
-    width: 100px;
-  }
+	input[type=number] {
+		width: 35px;
+		text-align: end;
+	}
 
-  select {
-    @extend %input-style;
-    border: 1px solid #000;
-    background: #222;
-  }
+	select {
+		@extend %input-style;
+		border: 1px solid #000;
+		background: #222;
+	}
+}
 
+body {
+	background: white;
+	padding: 1em;
 }
 
 .pointer {
